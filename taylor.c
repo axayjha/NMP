@@ -29,10 +29,10 @@ void main()
  	y=y0; 	x=x0;
  	do
 	{
-		y +=       h 			* f(x,y)  +\
+		y +=       h 		* f(x,y)  +\
 		     (   (h*h)     /2 ) * g(x,y)  +\
 		     (  (h*h*h)    /6 ) * e(x,y)  +\
-		     ( (h*h*h*h)   /24) * i(x,y) ;
+		     ( (h*h*h*h)   /24) * i(x,y)  ;
  		x +=       h;
  	}while( x<xn );
  	printf("\ny(%f)=%f\n",x,y);
